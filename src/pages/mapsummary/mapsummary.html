@@ -1,0 +1,31 @@
+<!--
+  Generated template for the MapsummaryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>mapsummary</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <div class="image-div" [ngStyle]="{'background-image': 'url(' + locationInfo.tripSummary + ')'}">
+
+        </div>
+    </ion-card>
+    <div *ngFor="let attractions of locationInfo.attractionsDetails">
+        <span class="place-image " place-image [ngStyle]="{'background-image': 'url(' + attractions.image + ')'}">
+    
+            </span>
+        <span>
+    {{ attractions.title}}
+            </span>
+
+    </div>
+</ion-content>

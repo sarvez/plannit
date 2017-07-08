@@ -1,0 +1,131 @@
+page-things-to-do {
+    .content-wrapper-toolbar>.scroll-content {
+        margin-top: 35px !important;
+        margin-bottom: 39px;
+        overflow: hidden;
+    }
+    .slider-wrapper>.scroll-content {
+        margin-bottom: 49px;
+        padding-top: 0px;
+    }
+    ion-header .toolbar-background {}
+    .toolbar-background {
+        background-color: black;
+        background-size: contain;
+    }
+    .toolbar-title-md {
+        color: white;
+    }
+    ion-navbar .back-button {
+        color: white;
+    }
+    .fab {
+        width: 45px;
+        height: 45px
+    }
+    .segmentcontrols-dashboard {
+        background: none;
+        padding: 0px;
+        min-height: 40px;
+        border-bottom: 1px solid #c5bfbf;
+        .toolbar-background {
+            background: $theme-white;
+        }
+    }
+    .segment-button {
+        min-width: 100px !important;
+        max-width: 200px !important;
+    }
+    ion-segment {
+        overflow: scroll;
+        justify-content: left;
+        padding: 0px 10px;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    .toolbar .segment-md {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    /*Timeline*/
+    .pos-absolute-right {
+        position: absolute;
+        right: 8px;
+    }
+    .timeline {
+        position: relative;
+        margin: 15px 0 0 0;
+    }
+    .timeline .timeline-thumb {
+        border-radius: 500px;
+        width: 60px;
+        z-index: 2;
+        position: absolute;
+        left: 10px
+    }
+    .timeline .timeline-thumb.timeline-icon i {
+        font-size: 28px;
+        margin: 6px 0;
+        display: block;
+    }
+    .timeline .timeline-item {
+        margin-left: 25px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        padding-right: 15px;
+        text-align: left;
+        h4 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .timeline .timeline-stats {
+        position: relative;
+        font-size: 12px;
+        color: #7F8C8D;
+    }
+    .divider-title {
+        background: $theme-red;
+        padding: 5px 15px;
+        color: #fff;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    .slide-zoom {
+        height: 100%;
+    }
+    ion-list .timeline-item {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        padding-right: 0px;
+        margin: 10px;
+        border-radius: 2px;
+        width: 100%;
+        font-size: 1.4rem;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        padding-top: 0px;
+        margin-left: 0px;
+            height: 230px;
+    }
+    .slider-image {
+        height: 124px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    ion-list .item-item {
+        padding-left: 16px;
+        border-radius: 0;
+        position: relative;
+        font-size: 1.7rem;
+        color: #000;
+        background-color: #fff;
+        -webkit-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+}

@@ -1,0 +1,122 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+    .toolbar-title-ios {
+        color: #ffffff;
+    }
+  .slide-zoom {
+    padding-top: 10px;
+   }
+    .toolbar-background {
+           background-color: black;
+            background-size: contain;
+    }
+
+ion-navbar  .toolbar-title-md {
+        color: white;
+    }
+
+.slider-gradient-overlay {
+    background: rgba(2, 18, 78, 0.7);
+    background: -moz-linear-gradient(left, rgba(2, 18, 78, 0.7) 0%, rgba(222, 49, 12, 0.6) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2, 18, 78, 0.7)), color-stop(100%, rgba(222, 49, 12, 0.6)));
+    background: -webkit-linear-gradient(left, rgba(2, 18, 78, 0.7) 0%, rgba(222, 49, 12, 0.6) 100%);
+    background: -o-linear-gradient(left, rgba(2, 18, 78, 0.7) 0%, rgba(222, 49, 12, 0.6) 100%);
+    background: -ms-linear-gradient(left, rgba(2, 18, 78, 0.7) 0%, rgba(222, 49, 12, 0.6) 100%);
+    background: linear-gradient(to right, rgba(2, 18, 78, 0.7) 0%, rgba(222, 49, 12, 0.6) 100%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.fill {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+ .scroll-content
+ {
+     background-color: $theme-white;
+     text-align: center;
+     padding-top: 10px;
+ }
+
+ .button-ios,.button-md,
+ .button-md:hover:not(.disable-hover),
+ .button-ios.activated
+ {
+    background-color: $theme-red;
+}
+.segment-md .segment-button{
+  border-color:  $theme-red;
+  color:  $theme-red;
+}
+.segment-ios .segment-button.segment-activated, 
+.fab-ios-danger,.segment-button{
+     background-color: $theme-red;
+}
+.segment-ios .segment-button,
+.alert-ios [aria-checked=true] .alert-radio-inner{
+    color:  $theme-red;
+    border-color:  $theme-red;
+}
+
+ .picker-md .picker-button, .picker-md .picker-button.activated ,
+ .picker-md .picker-button, .picker-md .picker-button.activated,
+ .picker-md .picker-prefix, .picker-md .picker-suffix, .picker-md .picker-opt.picker-opt-selected,
+ .picker-ios .picker-button, .picker-ios .picker-button.activated ,
+ .alert-ios [aria-checked=true] .alert-radio-label,
+ .alert-ios .alert-button
+{
+color: $theme-red !important;
+}
+.bar-button-default-ios, .bar-button-default.bar-button-ios-default,
+.tabs-ios .tab-button[aria-selected=true], .bar-button-clear-ios-default,
+.tabs-ios .tab-button[aria-selected=true] .tab-button-icon ,
+.tabs-md .tab-button[aria-selected=true] .tab-button-icon,
+.tabs-md .tab-button .tab-button-icon,
+.tab-button-text ,.button-clear-ios
+
+{
+    color: #fff;
+}
+ion-tags-input .ion-tags-input .iti-tag-color,{
+        background:$theme-red;
+}
+ .segment-md .segment-button.segment-activated {
+    border-color: $theme-red;
+    opacity: 1;
+}
+.tabs-ios .tabbar,.tabs-md .tab-button {
+     background-color:$theme-black;
+}
+.tabs-md .tab-button .tab-button-icon
+{
+    color: #b0b0b0;
+}
+
+.timing-label {
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-top: 9px;
+}
+

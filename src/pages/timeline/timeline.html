@@ -1,0 +1,42 @@
+<!--
+  Generated template for the TimelinePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>TimeLine</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+
+    <div class="divider-title trip-name-fixed fixed">Dubai Trip</div>
+    <ul class="timeline">
+        <li *ngFor="let attraction of currentTrip.attractionsDetails">
+            <div class="timeline-thumb bg-color-blue timeline-icon">
+                <p class="timing-label">{{attraction.startTime}}</p>
+            </div>
+            <div class="timeline-item">
+                <div class="slider-image" [ngStyle]="{'background-image': 'url(' + attraction.image + ')'}"></div>
+                <ion-item>
+                    <ion-icon color="subtle" large item-start name='locate'></ion-icon>
+                    <p>{{attraction.title}}</p>
+                    <p>{{attraction.address.place + " " + attraction.address.city}}</p>
+                </ion-item>
+                <button ion-button icon-left class="nearbyBtn">
+                <ion-icon name="locate"></ion-icon>
+                  Near By
+                </button>
+            </div>
+        </li>
+    </ul>
+    <ion-fab bottom="" right="">
+        <button color="danger" ion-fab="" class="fab fab-ios fab-ios-danger btn-blue" (click)="createTrip()"><ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon><span class="button-inner"><ion-icon name="add" role="img" class="icon icon-ios ion-ios-add" aria-label="add"></ion-icon></span><div class="button-effect"></div></button>
+    </ion-fab>
+
+</ion-content>

@@ -1,0 +1,51 @@
+page-nearby {
+    .content-wrapper-toolbar>.scroll-content {
+        margin-top: 35px !important;
+        margin-bottom: 39px;
+        overflow: hidden;
+    }
+    .slider-wrapper>.scroll-content {
+        margin-bottom: 49px;
+        padding-top: 0px;
+    }
+    ion-header .toolbar-background {}
+    .toolbar-background {
+        background-color: black;
+        background-size: contain;
+    }
+    .toolbar-title-md {
+        color: white;
+    }
+    ion-navbar .back-button {
+        color: white;
+    }
+    .fab {
+        width: 45px;
+        height: 45px
+    }
+    .segmentcontrols-dashboard {
+        background: none;
+        padding: 0px;
+        min-height: 40px;
+        border-bottom: 1px solid #c5bfbf;
+        .toolbar-background {
+            background: $theme-white;
+        }
+    }
+    .segment-button {
+        min-width: 100px !important;
+        max-width: 200px !important;
+    }
+    ion-segment {
+        overflow: scroll;
+        justify-content: left;
+        padding: 0px 10px;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    .toolbar .segment-md {
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}

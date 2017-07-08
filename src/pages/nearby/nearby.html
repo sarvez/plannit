@@ -1,0 +1,22 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Nearby Offers</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content class="content-wrapper-toolbar">
+    <ion-toolbar class="segmentcontrols-dashboard">
+        <ion-segment [(ngModel)]="selectedSegment" (ionChange)="onSegmentChanged($event)">
+            <ion-segment-button *ngFor="let category of slides" value="{{category.id}}"> {{category.title}} </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+    <ion-content class="slider-wrapper">
+        <ion-slides #mySlider (ionSlideDidChange)="onSlideChanged($event)">
+            <ion-slide *ngFor="let category of slides">
+                {{category.title}}
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+</ion-content>

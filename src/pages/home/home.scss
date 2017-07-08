@@ -1,0 +1,388 @@
+page-home {
+    .divider-title.trip-name-fixed.fixed {
+        width: 100%;
+        z-index: 999;
+        border-radius: 0px;
+        margin-bottom: 10px;
+    }
+    .content-wrapper-toolbar>.scroll-content {
+        margin-top: 35px !important;
+        margin-bottom: 39px;
+        overflow: hidden;
+    }
+    .slider-wrapper>.scroll-content {
+        margin-bottom: 49px;
+        padding-top: 0px;
+    }
+    .activeTrips>div>ul:nth-child(2) {}
+    .content-wrapper-toolbar>.scroll-content {
+        margin-top: 35px;
+        margin-bottom: 39px;
+        overflow: hidden;
+    }
+    .activeTrips.swiper-slide.swiper-slide-active>div>ul:nth-child(2) {
+        margin-top: 50px;
+    }
+    .pastTrips .slide-zoom {
+        overflow: scroll;
+    }
+    ion-card.adv-map p {
+        font-size: 0.7em !important;
+    }
+    button[fab].fab-map {
+        top: calc(100% - 35px);
+        z-index: 50;
+    }
+    .btn-blue {
+        color: #fff;
+        background-color: $theme-red;
+    }
+    .item-bold {
+        font-weight: bold;
+    }
+    ion-content.cards-bg {
+        background-color: #f4f4f7;
+    }
+    .upcomingTrips .slide-zoom,
+    ion-slides .slide-zoom {
+        height: 100%;
+        overflow: scroll;
+    }
+    ion-header .toolbar-background {}
+    .toolbar-background {
+        background-color: black;
+        background-size: contain;
+    }
+    .toolbar-title-md {
+        color: white;
+    }
+    ion-navbar .back-button {
+        color: white;
+    }
+    .fab {
+        width: 45px;
+        height: 45px
+    }
+    .segmentcontrols-dashboard {
+        background: none;
+        padding: 0px;
+        min-height: 40px;
+        border-bottom: 1px solid #c5bfbf;
+        .toolbar-background {
+            background: $theme-white;
+        }
+    }
+    /*Timeline*/
+    .pos-absolute-right {
+        position: absolute;
+        right: 8px;
+    }
+    .timeline {
+        position: relative;
+        margin: 15px 0 0 0;
+    }
+    .timeline:before {
+        content: '';
+        position: absolute;
+        top: 110px;
+        bottom: 120px;
+        width: 5px;
+        background: $theme-red;
+        left: 48px;
+        margin-left: -10px;
+        z-index: 1;
+    }
+    .timeline .timeline-thumb {
+        border-radius: 500px;
+        width: 60px;
+        z-index: 2;
+        position: absolute;
+        left: 10px
+    }
+    .timeline .timeline-thumb.timeline-icon {
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        color: white;
+        border: 5px solid #CBD0D3;
+    }
+    .timeline .timeline-thumb.timeline-icon i {
+        font-size: 28px;
+        margin: 6px 0;
+        display: block;
+    }
+    .timeline .timeline-item {
+        margin-left: 25px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        padding-right: 15px;
+    }
+    .timeline .timeline-stats {
+        position: relative;
+        font-size: 12px;
+        color: #7F8C8D;
+    }
+    .divider-title {
+        padding: 5px 15px;
+    }
+    /* === Color Themes === */
+    .text-muted {
+        color: #6d6d72 !important;
+    }
+    .color-gray {
+        color: #8e8e93 !important;
+    }
+    .color-red {
+        color: #ff3b30 !important;
+    }
+    .bg-color-red {
+        background-color: #ff3b30 !important;
+    }
+    .color-white {
+        color: #ffffff !important;
+    }
+    .color-yellow {
+        color: #ffcc00 !important;
+    }
+    .bg-color-yellow {
+        background-color: #ffcc00 !important;
+    }
+    .color-green {
+        color: #4cd964 !important;
+    }
+    .color-orange {
+        color: #ff9500 !important;
+    }
+    .bg-color-orange {
+        background-color: #ff9500 !important;
+    }
+    .color-blue {
+        color: #007aff !important;
+    }
+    .bg-color-blue {
+        background-color: #007aff !important;
+    }
+    .color-lightblue {
+        color: #5ac8fa !important;
+    }
+    .bg-color-lightblue {
+        background-color: #5ac8fa !important;
+    }
+    .color-bluegray {
+        color: #607d8b !important;
+    }
+    .bg-color-bluegray {
+        background-color: #607d8b !important;
+    }
+    .color-night {
+        color: #2B1B17 !important;
+    }
+    .color-black {
+        color: black !important;
+    }
+    .bg-color-white {
+        background-color: #ffffff;
+    }
+    .bg-color-green {
+        background-color: #4cd964 !important;
+    }
+    .activeTrips .slide-zoom {
+        height: 100%;
+        overflow: scroll;
+        padding-top: 0px;
+    }
+    .slider-image {
+        height: 124px;
+        width: 350px;
+        background-repeat: no-repeat;
+    }
+    /*Timeline*/
+    .pos-absolute-right {
+        position: absolute;
+        right: 8px;
+    }
+    .timeline {
+        position: relative;
+        margin: 15px 0 0 0;
+    }
+    .timeline .timeline-thumb {
+        border-radius: 500px;
+        width: 60px;
+        z-index: 2;
+        position: absolute;
+        left: 10px
+    }
+    .timeline .timeline-thumb.timeline-icon i {
+        font-size: 28px;
+        margin: 6px 0;
+        display: block;
+    }
+    .timeline .timeline-item {
+        margin-left: 25px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        padding-right: 15px;
+        text-align: left;
+        h4 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+    .timeline .timeline-stats {
+        position: relative;
+        font-size: 12px;
+        color: #7F8C8D;
+    }
+    .divider-title {
+        background: $theme-red;
+        padding: 5px 15px;
+        color: #fff;
+        display: inline-block;
+        border-radius: 10px;
+    }
+    /* === Color Themes === */
+    .text-muted {
+        color: #6d6d72 !important;
+    }
+    .color-gray {
+        color: #8e8e93 !important;
+    }
+    .color-red {
+        color: #ff3b30 !important;
+    }
+    .bg-color-red {
+        background-color: #ff3b30 !important;
+    }
+    .color-white {
+        color: #ffffff !important;
+    }
+    .color-yellow {
+        color: #ffcc00 !important;
+    }
+    .bg-color-yellow {
+        background-color: #ffcc00 !important;
+    }
+    .color-green {
+        color: #4cd964 !important;
+    }
+    .color-orange {
+        color: #ff9500 !important;
+    }
+    .bg-color-orange {
+        background-color: #ff9500 !important;
+    }
+    .color-blue {
+        color: #007aff !important;
+    }
+    .bg-color-blue {
+        background-color: $theme-red !important;
+    }
+    .bg-color-black {
+        background-color: $theme-black !important;
+    }
+    .color-lightblue {
+        color: #5ac8fa !important;
+    }
+    .bg-color-lightblue {
+        background-color: #99a5aa !important;
+    }
+    .color-bluegray {
+        color: #8e989d !important;
+    }
+    .bg-color-bluegray {
+        background-color: #8e989d !important;
+    }
+    .color-night {
+        color: #2B1B17 !important;
+    }
+    .color-black {
+        color: black !important;
+    }
+    .bg-color-white {
+        background-color: #ffffff;
+    }
+    .bg-color-green {
+        background-color: #4cd964 !important;
+    }
+    .activeTrips .slide-zoom {
+        height: 100%;
+        overflow: scroll;
+    }
+    .slider-image {
+        height: 124px;
+        width: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .cards-container {
+        position: relative;
+    }
+    .activeTrips .card-ios {
+        width: calc(100% - 130px);
+        margin-left: 110px;
+    }
+    .activeTrips .card-ios:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 95px;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-right: 7px solid white;
+    }
+    .timeline li {
+        position: relative;
+        list-style: none;
+        margin-bottom: 50px;
+    }
+    .timeline .timeline-thumb.timeline-icon {
+        text-align: center;
+        color: white;
+        border: 5px solid #CBD0D3;
+        position: absolute;
+        top: 90px;
+        left: -30px;
+    }
+    .timeline .timeline-item {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        padding-right: 0px;
+        margin: 10px;
+        border-radius: 2px;
+        width: calc(100% - 65px);
+        font-size: 1.4rem;
+        background: #fff;
+        -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        padding-top: 0px;
+        margin-left: 40px;
+        height: 260px;
+    }
+    .timeline .slider-image {
+        height: 124px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    ion-label p {
+        white-space: normal;
+    }
+    .nearbyBtn {
+        margin-top: 12px;
+        float: right;
+        margin-right: 6px;
+    }
+    .timing-label {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .card-ios h2 {
+        padding-top: 15px;
+        padding-bottom: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

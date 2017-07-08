@@ -1,0 +1,44 @@
+page-profile {
+    ion-slides.contact-details .slide-zoom {
+        height: 100%;
+    }
+    ion-card img {
+        display: inline;
+        width: 110px;
+        height: 110px;
+        float: left;
+    }
+    .card-ios p {
+        margin: 0 0 2px;
+        font-size: 1.4rem;
+        color: #666;
+        text-align: left;
+    }
+    .card-title-ios {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: #222;
+        margin: 2px 0;
+        text-align: left;
+        padding: 8px 0;
+    }
+    .card-content-ios,
+    ion-card-content {
+        padding: 13px 16px 14px;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        float: right;
+        width: 66%;
+    }
+    .toolbar-background {
+        background-color: rgba(241, 241, 241, 0.54);
+        background-size: contain;
+    }
+    ion-card-header {
+        padding-bottom: 0px !important;
+    }
+    ion-card {
+        margin-top: 0px !important;
+    }
+}

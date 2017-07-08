@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "name": "Mohamed Rias",
+        "image": "assets/friends/1.jpg"
+    },
+    {
+        "id": "2",
+        "name": "Syamjith",
+        "image": "assets/friends/2.jpg"
+    },
+    {
+        "id": "3",
+        "image": "assets/friends/3.jpg"
+        "name": "Sarvezvaran",
+    },
+    {
+        "id": "4",
+        "name": "Manikandan",
+        "image": "assets/friends/4.jpg"
+    },
+    {
+        "id": "5",
+        "image": "assets/friends/5.jpg"
+        "name": "Dineshkumar Mohan",
+    },
+    {
+        "id": "6",
+        "image": ""
+        "name": "Karthick",
+    },
+    {
+        "id": "7",
+        "image": ""
+        "name": "Amrutha",
+    },
+    {
+        "id": "8",
+        "image": ""
+        "name": "Anusha",
+    },
+    {
+        "id": "9",
+        "image": ""
+        "name": "Anusha",
+    },
+    {
+        "id": "10",
+        "image": ""
+        "name": "Anusha",
+    }
+]

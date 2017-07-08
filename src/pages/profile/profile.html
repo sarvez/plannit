@@ -1,0 +1,74 @@
+<style media="screen">
+  .plainText {
+    text-decoration: none;
+  }
+</style>
+
+<ion-navbar *navbar>
+  <ion-title>
+    Profile App
+  </ion-title>
+</ion-navbar>
+
+<ion-content class="home">
+  <ion-card>
+    <img src="./../../assets/profile.jpg" />
+    <ion-card-content>
+      <ion-card-title>
+        Mohamed Rias
+      </ion-card-title>
+      <p>
+        Javascript Ninja and mobile app developer.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-toolbar class="segmentcontrols-dashboard">
+    <ion-segment [(ngModel)]="selectedSegment" (ionChange)="onSegmentChanged($event)">
+      <ion-segment-button *ngFor="let category of slides" value="{{category.id}}"> {{category.id}} </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <ion-content class="slider-wrapper">
+    <ion-slides class="contact-details" #Slider (ionSlideDidChange)="onSlideChanged($event)">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            Contact Detail
+          </ion-card-header>
+          <ion-card-content>
+          </ion-card-content>
+          <ion-list>
+            <button ion-item>
+                <ion-icon name="mail" item-left></ion-icon>
+                <a class="plainText" href="mailto:mohamedrias@gmail.com">mohamedrias@gmail.com</a>
+            </button>
+
+            <button ion-item>
+                <ion-icon name="facebook" ios="logo-facebook" md="logo-facebook" item-left></ion-icon>
+                <a class="plainText" href="facebook:techieblogger">techieblogger</a>
+            </button>
+
+            <button ion-item>
+                <ion-icon name="call" item-left></ion-icon>
+                <a class="plainText" href="tel:+971523498068">+971523498068</a>
+            </button>
+
+            <button ion-item>
+                <ion-icon name="privacy" item-left></ion-icon>
+                <a class="plainText" href="#privacy">Privacy</a>
+            </button>
+            
+          </ion-list>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <p>List of followers will be shown here</p>
+      </ion-slide>
+      <ion-slide>
+        <p>People I'm interested with.</p>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+
+
+</ion-content>

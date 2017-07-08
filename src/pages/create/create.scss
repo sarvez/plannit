@@ -1,0 +1,27 @@
+page-create {
+    .input-trip {
+        border: 1px solid #dedede;
+    }
+    .day-max-width {
+        max-width: 100%;
+    }
+    #date-trip .button-md {
+        color: none;
+    }
+    .trip-pull-right {
+        float: right;
+    }
+    .trip-pull-left {
+        float: left;
+    }
+    .trip-align-center {
+        text-align: center;
+    }
+    .date-trip {
+        background-color: transparent;
+    }
+    .text-input {
+        text-align: center;
+        font-weight: bold;
+    }
+}

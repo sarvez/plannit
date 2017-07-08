@@ -1,0 +1,87 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title> PlanIt </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="content-wrapper-toolbar">
+    <ion-toolbar class="segmentcontrols-dashboard">
+        <ion-segment [(ngModel)]="selectedSegment" (ionChange)="onSegmentChanged($event)">
+            <ion-segment-button value="past"> Past </ion-segment-button>
+            <ion-segment-button value="current"> Current </ion-segment-button>
+            <ion-segment-button value="upcoming"> Upcoming </ion-segment-button>
+        </ion-segment>
+    </ion-toolbar>
+    <ion-content class="slider-wrapper">
+        <ion-slides #mySlider (ionSlideDidChange)="onSlideChanged($event)">
+            <ion-slide class="pastTrips">
+                <ion-card class="adv-map" *ngFor="let pastTrip of pastTrips">
+                    <div (click)="goToTimeLine(pastTrip)">
+                        <h2>{{ pastTrip.title}}</h2>
+                        <div style="position: relative">
+                            <ion-slides pager>
+                                <ion-slide *ngFor="let attractions of pastTrip.attractionsDetails">
+                                    <div class="slider-image" [ngStyle]="{'background-image': 'url(' + attractions.image + ')'}"></div>
+                                </ion-slide>
+                            </ion-slides>
+                        </div>
+                    </div>
+                    <ion-item actions>
+                        <span ion-text item-start color="subtle">{{ pastTrip.createdDate}}</span>
+                        <span ion-text item-start color="subtle">-</span>
+                        <span ion-text item-start color="subtle">{{ pastTrip.plannedDate}}</span>
+                        <button ion-button color="primary" clear item-end icon-start (click)="openModal(pastTrip)">
+                                <div >
+                                   <ion-icon name='md-map' ></ion-icon>
+                                </div>
+                            </button>
+                    </ion-item>
+                </ion-card>
+            </ion-slide>
+            <ion-slide class="activeTrips">
+                <div class="divider-title trip-name-fixed fixed">Dubai Trip</div>
+                <ul class="timeline">
+                    <li *ngFor="let attraction of currentTrip.attractionsDetails">
+                        <div class="timeline-thumb bg-color-blue timeline-icon">
+                            <p class="timing-label">{{attraction.startTime}}</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="slider-image" [ngStyle]="{'background-image': 'url(' + attraction.image + ')'}"></div>
+                            <ion-item>
+                                <ion-icon color="subtle" large item-start name='locate'></ion-icon>
+                                <p>{{attraction.title}}</p>
+                                <p>{{attraction.address.place + " " + attraction.address.city}}</p>
+                            </ion-item>
+                            <button ion-button icon-left class="nearbyBtn" (click)="goToNearbyPage(currentTrip)">
+                                 <ion-icon name="locate"></ion-icon>
+                                     Near By
+                            </button> </div>
+                    </li>
+                </ul>
+                <ion-fab bottom="" right=""> <button color="danger" ion-fab="" class="fab fab-ios fab-ios-danger btn-blue" (click)="createTrip()"><ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon><span class="button-inner"><ion-icon name="add" role="img" class="icon icon-ios ion-ios-add" aria-label="add"></ion-icon></span><div class="button-effect"></div></button>                    </ion-fab>
+            </ion-slide>
+            <ion-slide class="upcomingTrips">
+                <ion-slide class="upcomingTrips">
+                    <ion-card class="adv-map" *ngFor="let upcomingTrip of upcomigtrips">
+                        <div (click)="goToTimeLine(upcomingTrip)">
+                            <h2>{{ upcomingTrip.title}}</h2>
+                            <div style="position: relative">
+                                <ion-slides pager>
+                                    <ion-slide *ngFor="let attractions of upcomingTrip.attractionsDetails">
+                                        <div class="slider-image" [ngStyle]="{'background-image': 'url(' + attractions.image + ')'}"></div>
+                                    </ion-slide>
+                                </ion-slides>
+                            </div>
+                        </div>
+                        <ion-item actions> <span ion-text item-start color="subtle">{{ upcomingTrip.createdDate}}</span>
+                            <span ion-text item-start color="subtle">-</span>
+                            <span ion-text item-start color="subtle">{{ upcomingTrip.plannedDate}}</span>
+                            <button ion-button color="primary" clear item-end icon-start>
+                                    <ion-icon name='md-map' ></ion-icon>
+                                </button>
+                        </ion-item>
+                    </ion-card>
+                </ion-slide>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+</ion-content>

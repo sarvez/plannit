@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Things to do</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="content-wrapper-toolbar">
+  <ion-toolbar class="segmentcontrols-dashboard">
+    <ion-segment [(ngModel)]="selectedSegment" (ionChange)="onSegmentChanged($event)">
+      <ion-segment-button *ngFor="let category of slides" value="{{category.id}}"> {{category.title}} </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <ion-content class="slider-wrapper">
+    <ion-slides #mySlider (ionSlideDidChange)="onSlideChanged($event)">
+      <ion-slide *ngFor="let category of slides">
+        <ion-list>
+          <ion-item *ngFor="let attraction of filteredAttractions">
+            <div class="timeline-thumb bg-color-blue timeline-icon">
+            </div>
+            <div class="timeline-item">
+              <div class="slider-image" [ngStyle]="{'background-image': 'url(' + attraction.image + ')'}"></div>
+              <ion-item>
+                <ion-icon color="subtle" large item-start name='locate'></ion-icon>
+                <p>{{attraction.title}}</p>
+                <p>{{attraction.address.place + " " + attraction.address.city}}</p>
+              </ion-item>
+              <ion-item actions>
+                <span ion-text item-start color="secondary" class="item-bold">2 - 3 hours</span>
+                <button ion-button color="primary" clear *ngIf="!attraction.addedToTrip" item-end icon-start (click)="addToTrip(attraction)">
+                    <ion-icon name='add'></ion-icon>
+                    Add
+                </button>
+                <button ion-button color="primary" clear *ngIf="attraction.addedToTrip" item-end icon-start (click)="addToTrip(attraction)">
+                    <ion-icon name='minus'></ion-icon>
+                    Remove
+                </button>
+              </ion-item>
+            </div>
+          </ion-item>
+          <p *ngIf="filteredAttractions.length == 0">There're no destinations available currently under this category. You can add custom locations by clicking below.</p>
+          <ion-fab bottom="" right="" (click)="continue()"> 
+                <button ion-fab color="danger"><ion-icon name="arrow-dropright"></ion-icon></button>
+          </ion-fab>
+        </ion-list>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+</ion-content>
