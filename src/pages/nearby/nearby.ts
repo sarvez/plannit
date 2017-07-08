@@ -1,6 +1,7 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides } from 'ionic-angular';
 import {AttractionsProvider} from "./../../providers/attractions/attractions"
+import { Platform, ViewController } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,42 +10,27 @@ import {AttractionsProvider} from "./../../providers/attractions/attractions"
   providers: [AttractionsProvider]
 })
 export class NearbyPage {
-  @ViewChild('mySlider') slider: Slides;
-  slides: any = [];
-  selectedSegment: string;
   attractions: any[] = []
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private AttractionsProvider: AttractionsProvider) {
-    this.slides = AttractionsProvider.getCategories()
-  }
+  constructor(public navCtrl: NavController, public platform: Platform, public viewCtrl: ViewController, public navParams: NavParams, private AttractionsProvider: AttractionsProvider) {
+    this.attractions = AttractionsProvider.getAllAttractions()
 
-  onSegmentChanged(segmentButton) {
-    console.log("Segment changed to", segmentButton.value);
-    const selectedIndex = this.slides.findIndex((slide) => {
-      return slide.id === segmentButton.value;
+    this.platform.registerBackButtonAction(() => {
+      try {
+        this.viewCtrl.dismiss()
+      } catch(e) {
+
+      }
     });
-    this.slider.slideTo(selectedIndex);
-  }
-
-
-  onSlideChanged(slider) {
-    console.log('Slide changed');
-    const currentSlide = slider.getActiveIndex() < this.slides.length ? this.slides[slider.getActiveIndex()] : this.slides[this.slides.length-1]  ;
-    this.selectedSegment = currentSlide.id;
-  }
-
-  ionViewDidEnter() {
-    if (this.slider) {
-      const currentSlide = this.slides[0];
-      this.selectedSegment = currentSlide.id;
-    }
   }
 
   ionViewDidLoad() {
-    if (this.slider) {
-      const currentSlide = this.slides[0];
-      this.selectedSegment = currentSlide.id;
-    }
+    
+  }
+
+
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
 }

@@ -1,6 +1,6 @@
 page-mapsummary {
     .image-div {
-        height: 329px;
+        height: 300px;
         background-size: contain;
     }
     .place-image {
@@ -9,5 +9,51 @@ page-mapsummary {
         height: 115px;
         background-size: contain;
         background-repeat: no-repeat;
+    }
+    ion-text {
+        color: white;
+    }
+    .text-ios-primary {
+        color: white !important;
+    }
+    ion-slides.contact-details .slide-zoom {
+        height: 100%;
+    }
+    ion-card img {
+        display: inline;
+        width: 80px;
+        height: 80px;
+        float: left;
+    }
+    .card-ios p {
+        margin: 0 0 2px;
+        font-size: 1.4rem;
+        color: #666;
+        text-align: left;
+    }
+    .card-title-ios {
+        display: block;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: #222;
+        margin: 2px 0;
+        text-align: left;
+        padding: 8px 0;
+    }
+    .card-content-ios,
+    page-mapsummary ion-card-content {
+        padding: 13px 16px 14px;
+        font-size: 1.4rem;
+        line-height: 1.4;
+        float: left;
+        margin-left: 0px;
+        padding-top: 0px;
+        width: 59%;
+    }
+    ion-card-header {
+        padding-bottom: 0px !important;
+    }
+    ion-card {
+        margin-top: 0px !important;
     }
 }

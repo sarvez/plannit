@@ -1,10 +1,11 @@
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
-import { NavController, Slides } from 'ionic-angular';
+import { NavController, Slides, NavParams } from 'ionic-angular';
 import { CreatePage } from "../create/create"
-import { ModalController, Platform, NavParams, ViewController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { MapsummaryPage } from "../mapsummary/mapsummary";
 import { TimelinePage } from "../timeline/timeline";
 import { NearbyPage } from "../nearby/nearby";
+import { AlertController } from 'ionic-angular';
 
 import { TripsProvider } from "../../providers/trips/trips"
 import * as $ from 'jquery'
@@ -24,8 +25,9 @@ export class HomePage implements AfterViewInit {
   currentTrip: any;
   pastTrips: any[];
   upcomigtrips: any[];
+  from: string;
 
-  constructor(public navCtrl: NavController, public TripsProvider: TripsProvider, public ModalController: ModalController) {
+  constructor(public alertCtrl: AlertController, public navCtrl: NavController, public navParams: NavParams, public TripsProvider: TripsProvider, public ModalController: ModalController) {
     this.selectedSegment = 'current';
     this.slides = [
       {
@@ -45,6 +47,8 @@ export class HomePage implements AfterViewInit {
     this.upcomigtrips = this.getUpcomingTrips() || [];
     this.currentTrip = this.getCurrentTrips() || {};
     this.pastTrips = this.getPastTrips() || [];
+    this.from = this.navParams.data["from"]
+
   }
 
   onSegmentChanged(segmentButton) {
@@ -76,7 +80,18 @@ export class HomePage implements AfterViewInit {
     setTimeout(() => {
       this.scrollTo(3);
     }, 1000);
+    if (this.from && this.from == "confirmation") {
+      this.showAlert()
+    }
+  }
 
+  showAlert() {
+    let alert = this.alertCtrl.create({
+      title: 'Hurray!',
+      subTitle: "You've acquired the 'Explorer' badge. Congrats!",
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
   createTrip() {
@@ -115,10 +130,12 @@ export class HomePage implements AfterViewInit {
     modal.present();
   }
   goToTimeLine(item: any) {
-    this.navCtrl.setRoot(TimelinePage, item);
+    this.navCtrl.push(TimelinePage, item);
   }
   goToNearbyPage(item: any) {
-    this.navCtrl.setRoot(NearbyPage, item);
+    let modal = this.ModalController.create(NearbyPage, item);
+    modal.present();
+    //this.navCtrl.push(NearbyPage, item);
   }
   scrollTo(itemIndex: number) {
     if ($("#timeline-item-sd-" + itemIndex) != null && $("#timeline-item-sd-" + itemIndex).offset() != null) {

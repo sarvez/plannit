@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AttractionsProvider } from "./../../providers/attractions/attractions"
 import { TripsProvider } from "../../providers/trips/trips"
-
+import {ConfirmationScreenPage} from "./../confirmation-screen/confirmation-screen"
 /**
  * Generated class for the TimelinePreviewPage page.
  *
@@ -32,6 +32,10 @@ export class TimelinePreviewPage {
   addToTrip(attraction) {
         attraction.addedToTrip = !attraction.addedToTrip
         attraction.removedFromItenary = attraction.addedToTrip;
+  }
+
+  continue() {
+    this.navCtrl.push(ConfirmationScreenPage)
   }
 
 }

@@ -29,7 +29,9 @@
 ion-navbar  .toolbar-title-md {
         color: white;
     }
-
+    a {
+    color: black;
+    }
 .slider-gradient-overlay {
     background: rgba(2, 18, 78, 0.7);
     background: -moz-linear-gradient(left, rgba(2, 18, 78, 0.7) 0%, rgba(222, 49, 12, 0.6) 100%);
@@ -94,7 +96,9 @@ color: $theme-red !important;
 .tabs-ios .tab-button[aria-selected=true] .tab-button-icon ,
 .tabs-md .tab-button[aria-selected=true] .tab-button-icon,
 .tabs-md .tab-button .tab-button-icon,
-.tab-button-text ,.button-clear-ios
+.tab-button-text ,.button-clear-ios,
+.button-clear-md-primary,
+.back-button-icon-md
 
 {
     color: #fff;
@@ -118,5 +122,9 @@ ion-tags-input .ion-tags-input .iti-tag-color,{
     font-size: 1.35rem;
     font-weight: bold;
     margin-top: 9px;
+}
+
+.bg-color-blue {
+    background-color: #a70c0c !important;
 }
 

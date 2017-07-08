@@ -49,21 +49,25 @@ export class TripsProvider {
     this.trips.push(trip);
     trip = {
       "id": "2",
-      "title": "Dubai Trip",
+      "title": "Ras al-Khaimah",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
-      "plannedDate": "07/07/2016",
+      "plannedDate": "07/07/2018",
       "tripSummary": "../../assets/map/map2.jpeg",
       "participants": ["mohamedrias", "syamjith", "manikandan", "dineshkumar"],
       "attractionsDetails": {},
       "attractions": [{
-        "attractionid": "6",
-        "startTime": "10:00 AM",
+        "attractionid": "11",
+        "startTime": "8:00 AM",
         "endTime": "11:30 AM"
       }, {
-        "attractionid": "1",
-        "startTime": "12:30 PM",
-        "endTime": "5:20 PM"
+        "attractionid": "12",
+        "startTime": "12:00 PM",
+        "endTime": "1:20 PM"
+      }, {
+        "attractionid": "13",
+        "startTime": "1:30 PM",
+        "endTime": "4:20 PM"
       }]
     };
     trip.attractionsDetails = this.getAttractions(trip.attractions);
@@ -94,7 +98,7 @@ export class TripsProvider {
       "title": "Dubai Trip",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
-      "plannedDate": "07/07/2018",
+      "plannedDate": "07/07/2016",
       "tripSummary": "../../assets/map/map4.jpeg",
       "participants": ["mohamedrias", "syamjith", "manikandan", "dineshkumar"],
       "attractionsDetails": {},

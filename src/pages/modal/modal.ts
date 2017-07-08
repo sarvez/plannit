@@ -11,7 +11,17 @@ export class ModalContentPage {
   constructor(public platform: Platform, public params: NavParams, public viewCtrl: ViewController) {
     this.modalType = this.params
     this.data = this.params.get('data');
+
+    this.platform.registerBackButtonAction(() => {
+      try {
+        this.viewCtrl.dismiss()
+      } catch(e) {
+
+      }
+    });
   }
+
+  
 
   dismiss() {
     this.viewCtrl.dismiss();

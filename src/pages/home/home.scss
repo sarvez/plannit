@@ -84,8 +84,8 @@ page-home {
     .timeline:before {
         content: '';
         position: absolute;
-        top: 110px;
-        bottom: 120px;
+        top: 0px;
+        bottom: 210px;
         width: 5px;
         background: $theme-red;
         left: 48px;
@@ -343,7 +343,7 @@ page-home {
         color: white;
         border: 5px solid #CBD0D3;
         position: absolute;
-        top: 90px;
+        top: 0px;
         left: -30px;
     }
     .timeline .timeline-item {
@@ -378,11 +378,36 @@ page-home {
     .timing-label {
         font-size: 1.2rem;
         font-weight: bold;
+        padding-top: 15%;
     }
     .card-ios h2 {
         padding-top: 15px;
         padding-bottom: 5px;
         padding-right: 20px;
         padding-left: 20px;
+    }
+
+    .timeline:before {
+        background: #800808;
+    }
+
+    .timing-label {
+        font-size: 1.35rem;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    .bg-color-blue {
+        background-color: #a70c0c !important;
+    }
+    .timeline:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 5px;
+        background: #a70c0c;
+        left: 44px;
+        margin-left: -10px;
+        z-index: 1;
     }
 }

@@ -79,7 +79,7 @@ export class AttractionsProvider {
         "ageGroup": "ANY",
         "timeToVisit": "10:00 AM - 7:00 PM",
         "subPlaces": ["Dubai Aquarium & Underwater Zoo", "The Dubai Fountain", "SEGA Republic", "Dubai Dolphinarium"],
-        
+
       },
       {
         "id": "3",
@@ -336,6 +336,102 @@ export class AttractionsProvider {
         "ageGroup": "ANY",
         "timeToVisit": "9:00 PM - 3:00 AM",
         "subPlaces": [""]
+      },
+      {
+        "id": "11",
+        "type": "Entertainment",
+        "title": "Marjan Island resort and spa",
+        "budget": "Any",
+        "teamSize": "Any",
+        "image": "assets/attractions/attraction11.jpg",
+        "description": "On a man-made island, this elegant coastal resort is 9 km from the Al Hamra Golf Club and 14 km from Ice Land Water Park and the Al Hamra Marina & Yacht Club",
+        "operationTiming": {
+          "openingTime": "8:00 AM",
+          "closingTime": "10:00 AM"
+        },
+        "rating": "",
+        "review": "",
+        "location": {
+          "latitude": "24.48239",
+          "longitude": "54.35482"
+        },
+        "address": {
+          "place": "Marjan Island Boulevard",
+          "city": "Ras al Khaimah",
+          "country": "AE",
+          "postalCode": "26416",
+          "state": "Abu Dhabi"
+        },
+        "gallery": ["http://reactmena.com/files/23.jpg", "https://i.ytimg.com/vi/YS3LjoZatI0/hqdefault.jpg"],
+        "categories": "Music,Events,Live Events,Songs,Concerts",
+        "tags": "",
+        "ageGroup": "ANY",
+        "timeToVisit": "9:00 PM - 3:00 AM",
+        "subPlaces": [""]
+      },
+      {
+        "id": "12",
+        "type": "Entertainment",
+        "title": "Al Jazirah al Hamra Fort - Heritage Old Village",
+        "budget": "Any",
+        "teamSize": "Any",
+        "image": "assets/attractions/attraction12.jpg",
+        "description": "Al Jazirah Al Hamra is a town to the south of the city of Ras al-Khaimah in the United Arab Emirates. It is known for its collection of abandoned houses and other buildings, including a mosque, which are widely believed locally to be haunted.[1][2][3] The town was originally home to three tribes and ruled by the Al-Zaab tribe, which was rehoused in Abu Dhabi following a dispute with the Ruler of Ras Al Khaimah.",
+        "operationTiming": {
+          "openingTime": "8:00 AM",
+          "closingTime": "10:00 AM"
+        },
+        "rating": "",
+        "review": "",
+        "location": {
+          "latitude": "25.708889",
+          "longitude": "55.797222"
+        },
+        "address": {
+          "place": "Historical landmark in Al Jazirah Al Hamra, United Arab Emirates",
+          "city": "Ras al Khaimah",
+          "country": "AE",
+          "postalCode": "26416",
+          "state": "Abu Dhabi"
+        },
+        "gallery": ["http://reactmena.com/files/23.jpg", "https://i.ytimg.com/vi/YS3LjoZatI0/hqdefault.jpg"],
+        "categories": "Music,Events,Live Events,Songs,Concerts",
+        "tags": "",
+        "ageGroup": "ANY",
+        "timeToVisit": "9:00 PM - 3:00 AM",
+        "subPlaces": [""]
+      },
+      {
+        "id": "13",
+        "type": "Entertainment",
+        "title": "Al Jazirah Al Hamra",
+        "budget": "Any",
+        "teamSize": "Any",
+        "image": "assets/attractions/attraction13.jpg",
+        "description": "Al Jazirah Al Hamra is a town to the south of the city of Ras al-Khaimah in the United Arab Emirates. It is known for its collection of abandoned houses and other buildings, including a mosque, which are widely believed locally to be haunted",
+        "operationTiming": {
+          "openingTime": "8:00 AM",
+          "closingTime": "10:00 AM"
+        },
+        "rating": "",
+        "review": "",
+        "location": {
+          "latitude": "25.708889",
+          "longitude": "55.797222"
+        },
+        "address": {
+          "place": " Jazira Alhamra Old Village",
+          "city": "Ras al Khaimah",
+          "country": "AE",
+          "postalCode": "26416",
+          "state": "Abu Dhabi"
+        },
+        "gallery": ["http://reactmena.com/files/23.jpg", "https://i.ytimg.com/vi/YS3LjoZatI0/hqdefault.jpg"],
+        "categories": "Music,Events,Live Events,Songs,Concerts",
+        "tags": "",
+        "ageGroup": "ANY",
+        "timeToVisit": "9:00 PM - 3:00 AM",
+        "subPlaces": [""]
       }
     ];
     this.attractions = attractions;
@@ -344,40 +440,40 @@ export class AttractionsProvider {
     this.categories = [{
       "id": "1",
       "title": "Top Rated"
-    },{
+    }, {
       "id": "2",
       "title": "For You"
-    },{
+    }, {
       "id": "3",
       "title": "Adventure"
-    },{
+    }, {
       "id": "4",
       "title": "City Heritage"
-    },{
+    }, {
       "id": "5",
       "title": "Amusement Parks"
-    },{
+    }, {
       "id": "6",
       "title": "Arts & Design"
-    },{
+    }, {
       "id": "7",
       "title": "Sports"
-    },{
+    }, {
       "id": "8",
       "title": "Fitness & Spa"
-    },{
+    }, {
       "id": "9",
       "title": "Shopping"
-    },{
+    }, {
       "id": "10",
       "title": "Beaches"
-    },{
+    }, {
       "id": "11",
       "title": "Indoors"
-    },{
+    }, {
       "id": "12",
       "title": "Outdoors"
-    },{
+    }, {
       "id": "13",
       "title": "Kids"
     }];

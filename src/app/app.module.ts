@@ -7,6 +7,7 @@ import { PlanIt } from './app.component';
 
 import { Facebook } from '@ionic-native/facebook';
 
+import { FriendsTimelinePage } from '../pages/friends-timeline/friends-timeline';
 
 import { TimelinePage } from '../pages/timeline/timeline';
 import { ProfilePage } from '../pages/profile/profile';
@@ -28,9 +29,10 @@ import { AttractionsProvider } from '../providers/attractions/attractions';
 import { UserProvider } from '../providers/user/user';
 import { NativeStorage } from '@ionic-native/native-storage';
 import { TodayComponent } from '../components/today/today';
-
+import {ConfirmationScreenPage} from "../pages/confirmation-screen/confirmation-screen"
 
 import {IonTagsInputModule} from "ionic-tags-input";
+import { TagsInputModule } from 'ionic2-tags-input';
 import { FriendsProvider } from '../providers/friends/friends';
 
 @NgModule({
@@ -48,7 +50,9 @@ import { FriendsProvider } from '../providers/friends/friends';
     ModalContentPage,
     MapsummaryPage,
     NearbyPage,
-    TimelinePreviewPage
+    TimelinePreviewPage,
+    ConfirmationScreenPage,
+    FriendsTimelinePage
   ],
   imports: [
     BrowserModule,
@@ -69,7 +73,9 @@ import { FriendsProvider } from '../providers/friends/friends';
     ThingsToDoPage,
     NearbyPage,
     MapsummaryPage,
-    TimelinePreviewPage
+    TimelinePreviewPage,
+    ConfirmationScreenPage,
+    FriendsTimelinePage
   ],
   providers: [
     StatusBar,

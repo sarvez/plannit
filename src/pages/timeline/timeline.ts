@@ -13,13 +13,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'timeline.html',
 })
 export class TimelinePage {
-currentTrip;
+  currentTrip: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.currentTrip = this.navParams.data;
+    this.currentTrip = this.navParams.data || {};
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TimelinePage');
   }
 
+  isPastEvent(trip: any) {
+    return new Date(trip.plannedDate).setHours(0, 0, 0, 0) < new Date().setHours(0, 0, 0, 0)
+  }
+
+  isFutureEvent(trip: any) {
+    return new Date(trip.plannedDate).setHours(0, 0, 0, 0) > new Date().setHours(0, 0, 0, 0)
+  }
+
+  isCurrentEvent(trip: any) {
+    return new Date(trip.plannedDate).setHours(0, 0, 0, 0) == new Date().setHours(0, 0, 0, 0)
+  }
 }

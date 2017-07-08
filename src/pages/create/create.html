@@ -94,16 +94,21 @@
 </ion-grid>
 
   <ion-item>
+
     <ion-grid>
       <ion-row>
-        <ion-col>
-          <button ion-button full color="danger" (click)="cancelMyTrip()">Cancel My Trip</button>
-        </ion-col>
-        <ion-col>
-          <button ion-button full (click)="saveMyTrip()">Save for Later</button>
-        </ion-col>
-        <ion-col>
+        <ion-col col-md-12>
           <button ion-button full color="secondary" (click)="createTripForMe()">Continue</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-md-4 class="sec-cols">
+            <button ion-button full color="light" (click)="cancelMyTrip()" class="cancel">Cancel My Trip</button>
+          </ion-col>
+        <ion-col col-md-4 class="sec-cols">
+          <button ion-button full (click)="saveMyTrip()">Save for Later</button>
         </ion-col>
       </ion-row>
     </ion-grid>

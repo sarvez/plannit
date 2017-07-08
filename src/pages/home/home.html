@@ -38,7 +38,7 @@
                 </ion-card>
             </ion-slide>
             <ion-slide class="activeTrips">
-                <div class="divider-title trip-name-fixed fixed">Dubai Trip</div>
+                <div class="divider-title trip-name-fixed fixed">{{currentTrip.title}}</div>
                 <ul class="timeline">
                     <li *ngFor="let attraction of currentTrip.attractionsDetails">
                         <div class="timeline-thumb bg-color-blue timeline-icon">
@@ -75,7 +75,7 @@
                         <ion-item actions> <span ion-text item-start color="subtle">{{ upcomingTrip.createdDate}}</span>
                             <span ion-text item-start color="subtle">-</span>
                             <span ion-text item-start color="subtle">{{ upcomingTrip.plannedDate}}</span>
-                            <button ion-button color="primary" clear item-end icon-start>
+                            <button ion-button color="primary" clear item-end icon-start  (click)="openModal(upcomingTrip)">
                                     <ion-icon name='md-map' ></ion-icon>
                                 </button>
                         </ion-item>

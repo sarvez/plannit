@@ -88,9 +88,12 @@ export class CreatePage {
       this.suggestedFriends = [];
   }
 
-  searchFriends(str: any): boolean{
+  searchFriends(str): boolean{
     console.log('searhing friends..')
     console.log(str);
+    console.log(this.tags)
+    var d = document.getElementById('tagFriend');
+    console.log(d)
       console.log(this.fbFriendsList)
     if (str == undefined || str == '') {
         this.suggestedFriends = [];

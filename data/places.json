@@ -11,7 +11,7 @@
             "openingTime": "10:00 AM",
             "closingTime": "12:00 AM"
         },
-        "rating": "",
+        "rating": "4.5",
         "review": "",
         "location": {
             "latitude": "25.198518",
@@ -43,7 +43,7 @@
             "openingTime": "10:00 AM",
             "closingTime": "7:00 PM"
         },
-        "rating": "",
+        "rating": "4",
         "review": "",
         "location": {
             "latitude": "25.1394138",
@@ -75,7 +75,7 @@
             "openingTime": "10:00 AM",
             "closingTime": "7:00 PM"
         },
-        "rating": "",
+        "rating": "4",
         "review": "",
         "location": {
             "latitude": "24.462072",
@@ -107,7 +107,7 @@
             "openingTime": "12:00 AM",
             "closingTime": "11:59 PM"
         },
-        "rating": "",
+        "rating": "3",
         "review": "",
         "location": {
             "latitude": "23.8869805",
@@ -139,7 +139,7 @@
             "openingTime": "9:00 PM",
             "closingTime": "3:00 AM"
         },
-        "rating": "",
+        "rating": "3",
         "review": "",
         "location": {
             "latitude": "25.0984578",
@@ -171,7 +171,7 @@
             "openingTime": "9:00 PM",
             "closingTime": "3:00 AM"
         },
-        "rating": "",
+        "rating": "2",
         "review": "",
         "location": {
             "latitude": "24.4840659",
@@ -203,7 +203,7 @@
             "openingTime": "9:00 PM",
             "closingTime": "5:00 AM"
         },
-        "rating": "",
+        "rating": "3",
         "review": "",
         "location": {
             "latitude": "24.4862528",
@@ -235,7 +235,7 @@
             "openingTime": "7:30 AM",
             "closingTime": "5:00 PM"
         },
-        "rating": "",
+        "rating": "4",
         "review": "",
         "location": {
             "latitude": "24.2075867",
@@ -267,7 +267,7 @@
             "openingTime": "12:00 AM",
             "closingTime": "11:59 PM"
         },
-        "rating": "",
+        "rating": "4.5",
         "review": "",
         "location": {
             "latitude": "24.8001801",
@@ -299,7 +299,7 @@
             "openingTime": "5:00 AM",
             "closingTime": "10:00 AM"
         },
-        "rating": "",
+        "rating": "4.5",
         "review": "",
         "location": {
             "latitude": "25.091427",

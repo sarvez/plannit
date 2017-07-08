@@ -28,9 +28,17 @@
                     <p>{{attraction.title}}</p>
                     <p>{{attraction.address.place + " " + attraction.address.city}}</p>
                 </ion-item>
-                <button ion-button icon-left class="nearbyBtn">
+                <button ion-button icon-left class="nearbyBtn" *ngIf="isCurrentEvent(currentTrip)">
                 <ion-icon name="locate"></ion-icon>
                   Near By
+                </button>
+                <button ion-button icon-left class="nearbyBtn" *ngIf="isPastEvent(currentTrip)">
+                <ion-icon name="locate"></ion-icon>
+                  Memories
+                </button>
+                <button ion-button icon-left class="nearbyBtn" *ngIf="isFutureEvent(currentTrip)">
+                <ion-icon name="locate"></ion-icon>
+                  Network Activity
                 </button>
             </div>
         </li>

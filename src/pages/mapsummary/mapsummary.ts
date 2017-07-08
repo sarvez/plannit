@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
+import { Platform, NavParams, ViewController } from 'ionic-angular';
 
 /**
  * Generated class for the MapsummaryPage page.
@@ -13,13 +14,26 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'mapsummary.html',
 })
 export class MapsummaryPage {
-  locationInfo;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  locationInfo: any;
+
+  constructor(public navCtrl: NavController, public platform: Platform, public navParams: NavParams, public viewCtrl: ViewController) {
     this.locationInfo = navParams.data;
+
+    this.platform.registerBackButtonAction(() => {
+      try {
+        this.viewCtrl.dismiss()
+      } catch(e) {
+
+      }
+    });
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MapsummaryPage');
+  }
+
+  dismiss() {
+    this.viewCtrl.dismiss();
   }
 
 }
