@@ -52,7 +52,7 @@ export class TripsProvider {
       "title": "Ras al-Khaimah",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
-      "plannedDate": "07/07/2018",
+      "plannedDate": "07/10/2017",
       "tripSummary": "../../assets/map/map2.jpeg",
       "participants": ["mohamedrias", "syamjith", "manikandan", "dineshkumar"],
       "attractionsDetails": {},
@@ -74,10 +74,10 @@ export class TripsProvider {
     this.trips.push(trip);
     trip = {
       "id": "3",
-      "title": "Dubai Trip",
+      "title": "Al Ain Trip",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
-      "plannedDate": "07/07/2016",
+      "plannedDate": "07/09/2016",
       "tripSummary": "../../assets/map/map3.jpeg",
       "participants": ["mohamedrias", "syamjith", "manikandan", "dineshkumar"],
       "attractionsDetails": {},
@@ -95,7 +95,7 @@ export class TripsProvider {
     this.trips.push(trip);
     trip = {
       "id": "4",
-      "title": "Dubai Trip",
+      "title": "Al Ain Trip",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
       "plannedDate": "07/07/2016",
@@ -116,7 +116,7 @@ export class TripsProvider {
     this.trips.push(trip);
     trip = {
       "id": "5",
-      "title": "Dubai Trip",
+      "title": "Fujairah Trip",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
       "plannedDate": "07/07/2018",
@@ -140,7 +140,7 @@ export class TripsProvider {
       "title": "Dubai Trip",
       "creator": "mohamedrias",
       "createdDate": "06/07/2016",
-      "plannedDate": "07/07/2018",
+      "plannedDate": "07/09/2017",
       "tripSummary": "../../assets/map/map6.jpeg",
       "participants": ["mohamedrias", "syamjith", "manikandan", "dineshkumar"],
       "attractionsDetails": {},

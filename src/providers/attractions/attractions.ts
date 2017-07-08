@@ -26,7 +26,7 @@ export class AttractionsProvider {
         "description": "The Dubai Mall features the world-class Dubai Aquarium & Underwater Zoo featuring thousands of aquatic animals and a 270-degree walkthrough tunnel. The strong family entertainment components include KidZania®, an innovative children’s ‘edutainment’ concept; SEGA Republic, a 76,000 sq ft high adrenaline indoor theme park; the 22-screen Reel Cinemas megaplex with a total capacity of 2,800 seats; and the Olympic-sized Dubai Ice Rink. For visitors, there is an adjoining 5-star premium hotel, The Address Dubai Mall and car parking for over 14,000 vehicles.",
         "operationTiming": {
           "openingTime": "10:00 AM",
-          "closingTime": "12:00 AM"
+          "closingTime": "08:00 PM"
         },
         "rating": "",
         "review": "",
@@ -57,8 +57,8 @@ export class AttractionsProvider {
         "image": "assets/attractions/attraction2.jpg",
         "description": "Located in Dubai and situated in front of the stunning Burj Al Arab, Wild Wadi offers 30 rides and attractions for all the family. Wild Wadi is themed around the tale of Juha, a known character from the Arabian folklore.",
         "operationTiming": {
-          "openingTime": "10:00 AM",
-          "closingTime": "7:00 PM"
+          "openingTime": "02:00 PM",
+          "closingTime": "06:00 PM"
         },
         "rating": "",
         "review": "",
@@ -75,7 +75,7 @@ export class AttractionsProvider {
         },
         "gallery": ["http://www.tropicDubaitours.com/wp-content/uploads/2015/12/Wild-Wadi-water-park-jumeirah1-1.jpg", "https://mediastream.jumeirah.com/webimage/heroactual//globalassets/global/hotels-and-resorts/Dubai/wild-wadi/information/wild-wadi-caring-hero.jpg"],
         "categories": "Adventure,Sports,Watergames,Kids",
-        "tags": ["Top Rated", "Recommended"],
+        "tags": ["Top Rated", "Recommended", "For You"],
         "ageGroup": "ANY",
         "timeToVisit": "10:00 AM - 7:00 PM",
         "subPlaces": ["Dubai Aquarium & Underwater Zoo", "The Dubai Fountain", "SEGA Republic", "Dubai Dolphinarium"],
@@ -90,8 +90,8 @@ export class AttractionsProvider {
         "image": "assets/attractions/attraction3.jpg",
         "description": "Set on a majestic stretch of white sand, and easily connected to all of the island’s diverse leisure activities, this laid-back beach is a blissful new development on the emirate’s entertainment district.",
         "operationTiming": {
-          "openingTime": "10:00 AM",
-          "closingTime": "7:00 PM"
+          "openingTime": "05:00 PM",
+          "closingTime": "08:00 PM"
         },
         "rating": "",
         "review": "",
@@ -268,7 +268,7 @@ export class AttractionsProvider {
         },
         "gallery": ["http://reactmena.com/files/23.jpg", "https://i.ytimg.com/vi/YS3LjoZatI0/hqdefault.jpg"],
         "categories": "Music,Events,Live Events,Songs,Concerts",
-        "tags": "",
+        "tags": "For You",
         "ageGroup": "ANY",
         "timeToVisit": "9:00 PM - 3:00 AM",
         "subPlaces": [""]
@@ -282,8 +282,8 @@ export class AttractionsProvider {
         "image": "assets/attractions/attraction9.jpg",
         "description": "This market specializes in machine-made & traditional handmade carpets, rugs, kilims & cushions.",
         "operationTiming": {
-          "openingTime": "9:00 AM",
-          "closingTime": "3:00 PM"
+          "openingTime": "4:00 PM",
+          "closingTime": "6:00 PM"
         },
         "rating": "",
         "review": "",
@@ -314,8 +314,8 @@ export class AttractionsProvider {
         "image": "assets/attractions/attraction10.jpg",
         "description": "Busy port offering views of traditional dhow vessels & a marketplace with foods & goods.",
         "operationTiming": {
-          "openingTime": "9:00 AM",
-          "closingTime": "3:00 PM"
+          "openingTime": "2:00 AM",
+          "closingTime": "4:00 PM"
         },
         "rating": "",
         "review": "",
@@ -332,7 +332,7 @@ export class AttractionsProvider {
         },
         "gallery": ["http://reactmena.com/files/23.jpg", "https://i.ytimg.com/vi/YS3LjoZatI0/hqdefault.jpg"],
         "categories": "Music,Events,Live Events,Songs,Concerts",
-        "tags": "",
+        "tags": "City Heritage, For You",
         "ageGroup": "ANY",
         "timeToVisit": "9:00 PM - 3:00 AM",
         "subPlaces": [""]

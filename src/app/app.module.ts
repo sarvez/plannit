@@ -32,7 +32,6 @@ import { TodayComponent } from '../components/today/today';
 import {ConfirmationScreenPage} from "../pages/confirmation-screen/confirmation-screen"
 
 import {IonTagsInputModule} from "ionic-tags-input";
-import { TagsInputModule } from 'ionic2-tags-input';
 import { FriendsProvider } from '../providers/friends/friends';
 
 @NgModule({

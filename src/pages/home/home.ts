@@ -46,6 +46,7 @@ export class HomePage implements AfterViewInit {
     this.userTrips = TripsProvider.getTrips();
     this.upcomigtrips = this.getUpcomingTrips() || [];
     this.currentTrip = this.getCurrentTrips() || {};
+    this.TripsProvider.currentTrip = this.currentTrip || {}
     this.pastTrips = this.getPastTrips() || [];
     this.from = this.navParams.data["from"]
 
@@ -115,9 +116,9 @@ export class HomePage implements AfterViewInit {
   }
 
   getUpcomingTrips() {
-    let filteredTrips = this.userTrips.filter(item => new Date(item.plannedDate).setHours(0, 0, 0, 0) >= new Date().setHours(0, 0, 0, 0))
+    let filteredTrips = this.userTrips.filter(item => new Date(item.plannedDate).setHours(0, 0, 0, 0) > new Date().setHours(0, 0, 0, 0))
     if (filteredTrips.length >= 0) {
-      this.upcomigtrips = filteredTrips
+      this.upcomigtrips = filteredTrips || []
       return this.upcomigtrips
     }
   }
@@ -133,6 +134,7 @@ export class HomePage implements AfterViewInit {
     this.navCtrl.push(TimelinePage, item);
   }
   goToNearbyPage(item: any) {
+    this.TripsProvider.currentTrip = item
     let modal = this.ModalController.create(NearbyPage, item);
     modal.present();
     //this.navCtrl.push(NearbyPage, item);

@@ -26,8 +26,6 @@
                         </div>
                     </div>
                     <ion-item actions>
-                        <span ion-text item-start color="subtle">{{ pastTrip.createdDate}}</span>
-                        <span ion-text item-start color="subtle">-</span>
                         <span ion-text item-start color="subtle">{{ pastTrip.plannedDate}}</span>
                         <button ion-button color="primary" clear item-end icon-start (click)="openModal(pastTrip)">
                                 <div >
@@ -40,7 +38,7 @@
             <ion-slide class="activeTrips">
                 <div class="divider-title trip-name-fixed fixed">{{currentTrip.title}}</div>
                 <ul class="timeline">
-                    <li *ngFor="let attraction of currentTrip.attractionsDetails">
+                    <li *ngFor="let attraction of currentTrip.attractionsDetails; let i = index">
                         <div class="timeline-thumb bg-color-blue timeline-icon">
                             <p class="timing-label">{{attraction.startTime}}</p>
                         </div>
@@ -55,6 +53,9 @@
                                  <ion-icon name="locate"></ion-icon>
                                      Near By
                             </button> </div>
+                            <div class="car-travel" *ngIf="i > 1 && i < 3">
+                                <p>Book car</p>
+                            </div> 
                     </li>
                 </ul>
                 <ion-fab bottom="" right=""> <button color="danger" ion-fab="" class="fab fab-ios fab-ios-danger btn-blue" (click)="createTrip()"><ion-icon class="fab-close-icon icon icon-ios ion-ios-close" name="close" role="img" aria-label="close"></ion-icon><span class="button-inner"><ion-icon name="add" role="img" class="icon icon-ios ion-ios-add" aria-label="add"></ion-icon></span><div class="button-effect"></div></button>                    </ion-fab>
@@ -72,8 +73,7 @@
                                 </ion-slides>
                             </div>
                         </div>
-                        <ion-item actions> <span ion-text item-start color="subtle">{{ upcomingTrip.createdDate}}</span>
-                            <span ion-text item-start color="subtle">-</span>
+                        <ion-item actions>
                             <span ion-text item-start color="subtle">{{ upcomingTrip.plannedDate}}</span>
                             <button ion-button color="primary" clear item-end icon-start  (click)="openModal(upcomingTrip)">
                                     <ion-icon name='md-map' ></ion-icon>
